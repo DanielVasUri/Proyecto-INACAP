@@ -1,0 +1,51 @@
+
+<div style="display:flex;gap:32px;align-items:center;padding:1rem 0;flex-wrap:wrap">
+  <div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+      <rect width="32" height="32" rx="6" fill="#0a090d"/>
+      <ellipse cx="16" cy="17" rx="7" ry="8" fill="#1a0f1e"/>
+      <ellipse cx="16" cy="17" rx="6" ry="7" fill="#1e1028"/>
+      <path d="M16 10 C13 10, 10 12, 10 16 C10 21, 13 24, 16 25 C19 24, 22 21, 22 16 C22 12, 19 10, 16 10Z" fill="#2a1a3a"/>
+      <ellipse cx="16" cy="17" rx="4.5" ry="5.5" fill="#120c1a"/>
+      <path d="M13 14 Q16 11 19 14" stroke="#7a5090" stroke-width="0.8" fill="none"/>
+      <circle cx="13.5" cy="15" r="1.2" fill="#0a090d"/>
+      <circle cx="13.8" cy="14.7" r="0.4" fill="#8060a8"/>
+      <circle cx="18.5" cy="15" r="1.2" fill="#0a090d"/>
+      <circle cx="18.8" cy="14.7" r="0.4" fill="#8060a8"/>
+      <path d="M15 17 L14.5 18.5 L16 18 L17.5 18.5 L17 17Z" fill="#0a090d"/>
+      <path d="M16 18 L15 20 L16 19.5 L17 20Z" fill="#1a0f1e"/>
+      <path d="M10 16 C8 14, 6 15, 7 17 C8 18.5, 10 18, 10 16Z" fill="#1e1028"/>
+      <path d="M22 16 C24 14, 26 15, 25 17 C24 18.5, 22 18, 22 16Z" fill="#1e1028"/>
+      <path d="M10 16 C8 14, 6 15, 7 17" stroke="#5a3c78" stroke-width="0.5" fill="none"/>
+      <path d="M22 16 C24 14, 26 15, 25 17" stroke="#5a3c78" stroke-width="0.5" fill="none"/>
+      <path d="M13 24 L11 28 L13 27 L14 29 L15 26 L16 28 L17 26 L18 29 L19 27 L21 28 L19 24" fill="#1a0f1e"/>
+      <path d="M14 10 L13 7 L15 8 L14 5 L17 8 L16 6 L18 7 L16 10" fill="#2a1a3a"/>
+      <path d="M14 10 L13 7 L15 8 L14 5" stroke="#5a3c78" stroke-width="0.4" fill="none"/>
+    </svg>
+    <p style="font-size:11px;color:var(--color-text-secondary);margin:6px 0 0;text-align:center">32×32</p>
+  </div>
+  <div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="64" height="64">
+      <rect width="32" height="32" rx="6" fill="#0a090d"/>
+      <ellipse cx="16" cy="17" rx="7" ry="8" fill="#1a0f1e"/>
+      <ellipse cx="16" cy="17" rx="6" ry="7" fill="#1e1028"/>
+      <path d="M16 10 C13 10, 10 12, 10 16 C10 21, 13 24, 16 25 C19 24, 22 21, 22 16 C22 12, 19 10, 16 10Z" fill="#2a1a3a"/>
+      <ellipse cx="16" cy="17" rx="4.5" ry="5.5" fill="#120c1a"/>
+      <path d="M13 14 Q16 11 19 14" stroke="#7a5090" stroke-width="0.8" fill="none"/>
+      <circle cx="13.5" cy="15" r="1.2" fill="#0a090d"/>
+      <circle cx="13.8" cy="14.7" r="0.4" fill="#8060a8"/>
+      <circle cx="18.5" cy="15" r="1.2" fill="#0a090d"/>
+      <circle cx="18.8" cy="14.7" r="0.4" fill="#8060a8"/>
+      <path d="M15 17 L14.5 18.5 L16 18 L17.5 18.5 L17 17Z" fill="#0a090d"/>
+      <path d="M16 18 L15 20 L16 19.5 L17 20Z" fill="#1a0f1e"/>
+      <path d="M10 16 C8 14, 6 15, 7 17 C8 18.5, 10 18, 10 16Z" fill="#1e1028"/>
+      <path d="M22 16 C24 14, 26 15, 25 17 C24 18.5, 22 18, 22 16Z" fill="#1e1028"/>
+      <path d="M10 16 C8 14, 6 15, 7 17" stroke="#5a3c78" stroke-width="0.5" fill="none"/>
+      <path d="M22 16 C24 14, 26 15, 25 17" stroke="#5a3c78" stroke-width="0.5" fill="none"/>
+      <path d="M13 24 L11 28 L13 27 L14 29 L15 26 L16 28 L17 26 L18 29 L19 27 L21 28 L19 24" fill="#1a0f1e"/>
+      <path d="M14 10 L13 7 L15 8 L14 5 L17 8 L16 6 L18 7 L16 10" fill="#2a1a3a"/>
+      <path d="M14 10 L13 7 L15 8 L14 5" stroke="#5a3c78" stroke-width="0.4" fill="none"/>
+    </svg>
+    <p style="font-size:11px;color:var(--color-text-secondary);margin:6px 0 0;text-align:center">previa ampliada</p>
+  </div>
+</div>

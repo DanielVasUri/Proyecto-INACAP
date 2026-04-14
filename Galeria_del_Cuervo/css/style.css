@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'EB Garamond', Georgia, serif;
+}
+
+body {
+    color: rgb(210, 205, 195);
+    background-color: rgb(10, 9, 13);
+    background-image: radial-gradient(ellipse at top, rgb(25, 15, 40) 0%, rgb(10, 9, 13) 70%);
+}
+
+#caja {
+    border: 1px solid rgb(90, 60, 120);
+    background-color: rgb(20, 15, 30);
+    padding: 15px 20px 10px 30px;
+    margin: 15px;
+    width: 25%;
+    box-shadow: inset 0 0 20px rgba(80, 40, 110, 0.2);
+}
+
+header {
+    background-color: rgb(15, 12, 22);
+    border-bottom: 1px solid rgb(70, 50, 100);
+    padding: 10px;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.12em;
+    color: rgb(200, 185, 220);
+}
+
+nav {
+    background-color: rgb(8, 7, 12);
+    border-bottom: 1px solid rgb(50, 35, 75);
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    color: rgb(160, 145, 180);
+    padding: 16px 18px;
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    font-size: 0.85em;
+    letter-spacing: 0.08em;
+}
+
+nav a:hover {
+    background-color: rgb(35, 22, 55);
+    color: rgb(220, 210, 235);
+}
+
+main {
+    padding: 30px 60px;
+    margin-bottom: 60px;
+    line-height: 1.8;
+}
+
+footer {
+    background-color: rgb(8, 7, 12);
+    border-top: 1px solid rgb(50, 35, 75);
+    color: rgb(100, 88, 115);
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.85em;
+    letter-spacing: 0.05em;
+}
+
+section {
+    display: flex;
+    min-height: 400px;
+} 
+
+section nav {
+    width: 25%;
+    background-color: rgb(20, 15, 30);
+    border-right: 1px solid rgb(90, 60, 120);
+    padding: 15px;
+    flex-shrink: 0;
+    align-self: flex-start;
+    position: sticky;
+    top: 0;
+}
+
+section nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+article {
+    flex: 1;
+    padding: 30px 60px;
+}
+
+article img {
+    width: 100%;
+    max-width: 500px;
+    height: 250px;
+    object-fit: cover; 
+    display: block;
+    margin: 15px auto 30px; 
+    border: 1px solid rgb(90, 60, 120); 
+}
+
+#galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+#galeria a img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-family: 'Cinzel', serif;
+    color: rgb(160, 145, 180);
+    font-size: 0.9em;
+    letter-spacing: 0.08em;
+}
+
+input {
+    padding: 10px;
+    background-color: rgb(20, 15, 30);
+    border: 1px solid rgb(90, 60, 120);
+    color: rgb(210, 205, 195);
+    font-family: 'EB Garamond', serif;
+    font-size: 1em;
+}
+
+input[type="submit"] {
+    margin-top: 25px;
+    cursor: pointer;
+    background-color: rgb(35, 22, 55);
+    color: rgb(200, 185, 220);
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.1em;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(60, 40, 90);
+}

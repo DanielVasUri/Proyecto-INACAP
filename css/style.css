@@ -1,0 +1,214 @@
+/* === Variables === */
+:root {
+    --purple-dark:   #3b1f5e;
+    --purple-mid:    #5c3a8a;
+    --purple-light:  #9b7dc8;
+    --purple-pale:   #ede8f7;
+    --purple-tint:   #f7f4fd;
+    --text-main:     #2a1a45;
+    --text-muted:    #7a6d8e;
+    --border-color:  #cbbfe6;
+    --error-color:   #c0392b;
+    --success-color: #27ae60;
+    --white:         #ffffff;
+}
+
+/* === Base === */
+body {
+    background-color: var(--purple-tint);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-main);
+    min-height: 100vh;
+}
+
+/* === Card principal === */
+.form-card {
+    background: var(--white);
+    border-radius: 14px;
+    padding: 2.5rem 2.75rem;
+    box-shadow: 0 4px 24px rgba(59, 31, 94, 0.10);
+    border: 1px solid var(--purple-pale);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* === Header === */
+.form-header h2 {
+    color: var(--purple-dark);
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    margin-bottom: 0.25rem;
+}
+
+.form-header .text-muted {
+    color: var(--text-muted) !important;
+    font-size: 0.92rem;
+}
+
+/* === Divisor === */
+.divider {
+    border-color: var(--purple-pale);
+    opacity: 1;
+    margin-bottom: 1.75rem;
+}
+
+/* === Títulos de sección === */
+.section-title {
+    color: var(--purple-mid);
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    margin-bottom: 0.9rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 2px solid var(--purple-pale);
+}
+
+/* === Labels === */
+.form-label {
+    color: var(--text-main);
+    font-weight: 500;
+    font-size: 0.88rem;
+    margin-bottom: 0.3rem;
+}
+
+.required-star {
+    color: var(--purple-mid);
+    font-size: 0.85rem;
+}
+
+/* === Inputs y Select === */
+.form-control,
+.form-select {
+    border: 1.5px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    padding: 0.45rem 0.75rem;
+    color: var(--text-main);
+    background-color: var(--white);
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--purple-mid);
+    box-shadow: 0 0 0 3px rgba(92, 58, 138, 0.12);
+    outline: none;
+}
+
+.form-control.is-invalid,
+.form-select.is-invalid {
+    border-color: var(--error-color);
+}
+
+.form-control.is-valid,
+.form-select.is-valid {
+    border-color: var(--success-color);
+}
+
+/* === Mensajes de error === */
+.error-msg {
+    font-size: 0.78rem;
+    min-height: 1rem;
+    margin-top: 0.2rem;
+    color: var(--error-color);
+}
+
+/* === Lista de aficiones === */
+.hobby-list {
+    border-radius: 8px;
+    overflow: hidden;
+    min-height: 40px;
+}
+
+.hobby-list .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.88rem;
+    padding: 0.45rem 0.85rem;
+    border-color: var(--purple-pale);
+    color: var(--text-main);
+}
+
+.hobby-list .list-group-item:first-child {
+    border-top: 1.5px solid var(--border-color);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.hobby-list .list-group-item:last-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.hobby-list .btn-remove {
+    background: none;
+    border: none;
+    color: var(--purple-light);
+    font-size: 1rem;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0 0.2rem;
+    transition: color 0.15s;
+}
+
+.hobby-list .btn-remove:hover {
+    color: var(--error-color);
+}
+
+/* === Botón agregar afición === */
+.btn-add {
+    background-color: var(--purple-pale);
+    color: var(--purple-dark);
+    border: 1.5px solid var(--border-color);
+    font-size: 0.88rem;
+    font-weight: 600;
+    border-radius: 0 8px 8px 0;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-add:hover {
+    background-color: var(--purple-mid);
+    color: var(--white);
+    border-color: var(--purple-mid);
+}
+
+/* === Botones principales === */
+.btn-primary-custom {
+    background-color: var(--purple-dark);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1.8rem;
+    font-weight: 600;
+    font-size: 0.92rem;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary-custom:hover {
+    background-color: var(--purple-mid);
+    box-shadow: 0 2px 10px rgba(59, 31, 94, 0.18);
+}
+
+.btn-secondary-custom {
+    background-color: var(--purple-pale);
+    color: var(--purple-dark);
+    border: 1.5px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0.5rem 1.8rem;
+    font-weight: 600;
+    font-size: 0.92rem;
+    transition: background-color 0.2s;
+}
+
+.btn-secondary-custom:hover {
+    background-color: var(--border-color);
+}
+
+/* === Responsive mobile === */
+@media (max-width: 576px) {
+    .form-card {
+        padding: 1.5rem 1.25rem;
+    }
+}

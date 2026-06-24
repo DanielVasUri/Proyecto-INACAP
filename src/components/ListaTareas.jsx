@@ -59,72 +59,74 @@ export function ListaTareas() {
 
     return (
         <Fragment>
-            <div className="container my-5">
-                <h2 className="mb-4">Aplicación de Notas</h2>
+            <div style={{ minHeight: "100vh", backgroundColor: "#4a4a4a", padding: "2rem" }}>
+                <div className="container">
+                    <h2 className="mb-4 fw-bold" style={{ color: "#fff" }}>Post It :D!</h2>
 
-                {/* Formulario para agregar una nueva nota */}
-                <div className="card p-4 mb-5 shadow-sm">
-                    <h5 className="mb-3">Nueva nota</h5>
+                    {/* Formulario */}
+                    <div className="card p-4 mb-5 shadow-sm">
+                        <h5 className="mb-3">Nueva nota</h5>
 
-                    <div className="mb-3">
-                        <label htmlFor="titulo" className="form-label">Título (opcional)</label>
-                        <input
-                            id="titulo"
-                            type="text"
-                            className="form-control"
-                            placeholder="Título de la nota"
-                            value={titulo}
-                            onChange={(e) => setTitulo(e.target.value)}
-                        />
+                        <div className="mb-3">
+                            <label htmlFor="titulo" className="form-label">Título (opcional)</label>
+                            <input
+                                id="titulo"
+                                type="text"
+                                className="form-control"
+                                placeholder="Título de la nota"
+                                value={titulo}
+                                onChange={(e) => setTitulo(e.target.value)}
+                            />
+                        </div>
+
+                        <div className="mb-3">
+                            <label htmlFor="descripcion" className="form-label">
+                                Descripción <span className="text-danger">*</span>
+                            </label>
+                            <textarea
+                                id="descripcion"
+                                className={`form-control ${error ? "is-invalid" : ""}`}
+                                placeholder="Descripción de la nota"
+                                rows={3}
+                                value={descripcion}
+                                onChange={(e) => {
+                                    setDescripcion(e.target.value);
+                                    if (e.target.value.trim() !== "") setError("");
+                                }}
+                            />
+                        </div>
+
+                        <div className="mb-3 form-check">
+                            <input
+                                id="importante"
+                                type="checkbox"
+                                className="form-check-input"
+                                checked={importante}
+                                onChange={(e) => setImportante(e.target.checked)}
+                            />
+                            <label htmlFor="importante" className="form-check-label">Marcar como importante</label>
+                        </div>
+
+                        {error && <Mensaje tipo="danger" texto={error} />}
+
+                        <button onClick={agregarTarea} className="btn btn-success">
+                            Agregar nota
+                        </button>
                     </div>
 
-                    <div className="mb-3">
-                        <label htmlFor="descripcion" className="form-label">
-                            Descripción <span className="text-danger">*</span>
-                        </label>
-                        <textarea
-                            id="descripcion"
-                            className={`form-control ${error ? "is-invalid" : ""}`}
-                            placeholder="Descripción de la nota"
-                            rows={3}
-                            value={descripcion}
-                            onChange={(e) => {
-                                setDescripcion(e.target.value);
-                                if (e.target.value.trim() !== "") setError("");
-                            }}
-                        />
-                    </div>
-
-                    <div className="mb-3 form-check">
-                        <input
-                            id="importante"
-                            type="checkbox"
-                            className="form-check-input"
-                            checked={importante}
-                            onChange={(e) => setImportante(e.target.checked)}
-                        />
-                        <label htmlFor="importante" className="form-check-label">Marcar como importante</label>
-                    </div>
-
-                    {error && <Mensaje tipo="danger" texto={error} />}
-
-                    <button onClick={agregarTarea} className="btn btn-success">
-                        Agregar nota
-                    </button>
+                    {/* Grid de notas */}
+                    {tareas.length === 0 ? (
+                        <p style={{ color: "#ccc" }}>No hay notas todavía. ¡Agrega una!</p>
+                    ) : (
+                        <div className="row row-cols-1 row-cols-md-4 g-3">
+                            {tareas.map((tarea) => (
+                                <div key={tarea.id} className="col">
+                                    <ItemTarea tarea={tarea} onEliminar={eliminarTarea} />
+                                </div>
+                            ))}
+                        </div>
+                    )}
                 </div>
-
-                {/* Grid de notas: 4 columnas en desktop, 1 en mobile */}
-                {tareas.length === 0 ? (
-                    <p className="text-muted">No hay notas todavía. ¡Agrega una!</p>
-                ) : (
-                    <div className="row row-cols-1 row-cols-md-4 g-3">
-                        {tareas.map((tarea) => (
-                            <div key={tarea.id} className="col">
-                                <ItemTarea tarea={tarea} onEliminar={eliminarTarea} />
-                            </div>
-                        ))}
-                    </div>
-                )}
             </div>
         </Fragment>
     );

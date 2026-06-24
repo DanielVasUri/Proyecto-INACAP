@@ -19,7 +19,7 @@ export function ItemTarea({ tarea, onEliminar }) {
         <Fragment>
             <div
                 className="p-3 rounded position-relative"
-                style={{ ...estilo, minHeight: "100px", overflowWrap: "break-word" }}
+                style={{ ...estilo, minHeight: "100px", overflowWrap: "break-word", boxShadow: "3px 3px 8px rgba(0,0,0,0.3)" }}
             >
                 {/* Boton eliminar en esquina superior derecha */}
                 <button
